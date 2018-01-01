@@ -9,7 +9,7 @@
     <dubbo:application name="dubbo-app-provider" />
 
     <!-- 注册中心暴露服务地址 -->
-     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+     <dubbo:registry address="redis://127.0.0.1:6379" />
     <!--<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" client="zkclient" />-->
     <!-- 暴露服务 -->
     <dubbo:reference id="userService" interface="com.huc.app.service.UserService" />
